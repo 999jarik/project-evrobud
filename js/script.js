@@ -52,6 +52,6 @@ const asortSlider = new Swiper('.slider-2', {
 
 var player = new Playerjs({
   id:"player", 
-  file:"https://test.plrjs.com/sample.mp4",
+  file:"https://999jarik.github.io/project-evrobud/video/test-video.mp4",
   autoplay: 1
 });
