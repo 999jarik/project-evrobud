@@ -52,6 +52,6 @@ const asortSlider = new Swiper('.slider-2', {
 
 var player = new Playerjs({
   id:"player", 
-  file:"../video/test-video.mp4",
+  file:"https://test.plrjs.com/sample.mp4",
   autoplay: 1
 });
