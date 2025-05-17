@@ -113,3 +113,23 @@ label {
 legend {
     display: block;
 }
+
+/* Стилізація скролу */
+textarea::-webkit-scrollbar {
+    width: 12px; /* Ширина смуги прокрутки */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Колір фону треку */
+    border-radius: 44px; /* Закруглення кутів */
+    margin: 44px 0;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888; /* Колір повзунка */
+    border-radius: 10px; /* Закруглення повзунка */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Колір повзунка при наведенні */
+}

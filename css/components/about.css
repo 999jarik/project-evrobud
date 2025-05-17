@@ -1,0 +1,44 @@
+.about {
+    background-color: var(--main-grey);
+    padding: 96px 48px;
+}
+.about-content {
+    display: flex;
+    gap: 24px;
+}
+.about-desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 96px 0;
+}
+.about-desc h2 {
+    font-size: 68px;
+}
+.contact-adress {
+    font-size: 20px;
+    max-width: 440px;
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.phone-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.contacts a {
+    color: var(--main-purple);
+    transition: all .4s ease-in;
+}
+.contacts a:hover {
+    color: var(--main-green);
+}
+.map {
+    flex: 1;
+}

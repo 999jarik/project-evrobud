@@ -1,0 +1,96 @@
+.asort-section {
+    padding: 0 48px;
+    height: 880px;
+}
+.asort {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    position: relative;
+    overflow: hidden;
+    padding: 48px 96px;
+    background: linear-gradient(rgba(236, 236, 239, .8) 0%, rgba(236, 236, 239, .8) 100%), url(../../img/first-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 44px;
+}
+.asort-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 50%;
+    font-size: 68px;
+    font-weight: 600;
+}
+.asort-title-img {
+    height: 86px;
+    width: 86px;
+    object-fit: contain;
+}
+.asort-pagination-box {
+    width: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.asort-slide {
+    display: grid !important;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+.asort-slide-img-box {
+    height: 650px;
+    width: 650px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.asort-slide-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.asort-slide-desc h3 {
+    font-size: 52px;
+    margin-bottom: 8px;
+}
+.asort-slide-desc span {
+    font-size: 28px;
+}
+
+.asort-pagination {
+    max-width: fit-content;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid var(--main-purple);
+    border-radius: 44px;
+}
+.asort-pagination .swiper-pagination-bullet {
+    width: auto;
+    height: auto;
+    background: transparent;
+    color: #000 !important;
+    opacity: 1 !important;
+    padding: 16px 24px;
+    border-radius: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: normal;
+    border: none;
+}
+.asort-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #000;
+    color: #fff !important;
+    transform: scale(1);
+}
+.asort-pagination .swiper-pagination-bullet:hover {
+    opacity: 1;
+    cursor: pointer;
+}

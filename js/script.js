@@ -1,5 +1,5 @@
 import {createSlide} from "./createSlide.js";
-import {slides} from "./slides1.js"
+import {slides} from "./slides1.js";
 
 createSlide(slides);
 
@@ -61,5 +61,55 @@ var player = new Playerjs({
   autoplay: 1
 });
 
+// Валідація номеру телефону в формі
+mask('[data-tel-input]');
 
+const phoneInputs = document.querySelectorAll('[data-tel-input]');
+const errorMessage = document.getElementById('error-message');
+const requiredLength = 17;
+phoneInputs.forEach(input => {
+    input.addEventListener('input', ()=> {
+        if(input.value === '+') input.value = '';
+        const charCount = input.value.length;
+    
+        if (charCount == requiredLength) {
+          input.setCustomValidity(''); // Скидає помилку
+          errorMessage.style.display = 'none';
+          input.style.borderColor = 'green';
+        }
+    })
+    input.addEventListener('blur', ()=> {
+        if(input.value === '+') {input.value = '';}
+        const charCount = input.value.length;
 
+        if (charCount !== requiredLength) {
+            input.setCustomValidity('Введіть правильний номер');
+            errorMessage.style.display = 'block';
+            input.style.borderColor = 'red';
+        } else {
+            input.setCustomValidity(''); // Скидає помилку
+            errorMessage.style.display = 'none';
+            input.style.borderColor = 'green';
+        }
+    })
+    input.addEventListener('invalid', () => {
+    if (input.value.length !== requiredLength) {
+        input.setCustomValidity('Введіть правильний номер');
+        errorMessage.style.display = 'block';
+    }
+});
+});
+
+const textarea = document.getElementById('message');
+    textarea.addEventListener('input', function () {
+        this.style.height = 'auto';
+        this.style.height = `${Math.min(this.scrollHeight, 240)}px`;
+    });
+
+document.querySelector('.feedback-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  iziToast.success({
+    title: 'Дякуємо',
+    message: 'Зателефонуємо найближчим часом',
+});
+})

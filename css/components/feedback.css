@@ -1,0 +1,49 @@
+.feedback {
+    background-color: var(--main-purple);
+    width: 1028px;
+    margin: 0 auto;
+    border-radius: 44px;
+    padding: 96px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.feedback h2 {
+    font-size: 54px;
+    color: var(--main-white);
+    text-align: center;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+#name,
+#email,
+#message,
+#tel {
+    background-color: var(--main-white);
+    border-radius: 44px;
+    padding: 20px 32px;
+}
+#message {
+    resize: none;
+    /* overflow: hidden; */
+}
+#name::placeholder,
+#email::placeholder,
+#message::placeholder,
+#tel::placeholder {
+    color: var(--main-purple);
+}
+
+#submit {
+    padding: 16px 12px;
+    background-color: var(--main-green);
+    color: var(--main-white);
+    border-radius: 44px;
+    text-align: center;
+    font-size: 28px;
+}

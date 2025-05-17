@@ -1,0 +1,23 @@
+.prices {
+    display: grid;
+    padding: 0 48px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.price-card {
+    border: 1px solid var(--main-green);
+    border-radius: 44px;
+    overflow: hidden;
+    display: grid;grid-template-rows: 4fr 1fr;
+}
+.price-card-title {
+    background: var(--main-green);
+    padding: 110px 40px;
+    font-size: 62px;
+}
+.price-card-value {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+}

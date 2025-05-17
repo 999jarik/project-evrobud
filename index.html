@@ -52,7 +52,7 @@
                             <a href="#" class="social-link"><svg class="social-img"><use href="./img/svg/icons.svg#icon-insta"></use></svg></a>
                         </li>
                     </ul>
-                    <a href="#" class="contacts-link">
+                    <a href="#feedback-form" class="contacts-link">
                         <span>Замовити</span>
                     </a>
                     <div class="first-screen-absolute"><img src="./img/photo_2025-05-13_15-12-26.jpg" alt="main" class="img100per-cover"></div>
@@ -194,12 +194,7 @@
             </div>
 
         </section>
-        <section class="wrapper marquee mb-48">
-            <div class="marquee-content">
-                <span>📲 Напишіть нам у месенджери або телефонуйте — допоможемо з підбором! 📦 Є все в наявності. Зробіть замовлення вже сьогодні!</span>
-                <span>📲 Напишіть нам у месенджери або телефонуйте — допоможемо з підбором! 📦 Є все в наявності. Зробіть замовлення вже сьогодні!</span>
-            </div>
-        </section>
+
         <section id="about" class="about mb-48">
             <div class="wrapper about-content">
                 <div class="about-desc">
@@ -220,15 +215,38 @@
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3189.5044451499075!2d34.133045808411545!3d48.360203108069456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1747508392360!5m2!1sru!2sua" style="border: 2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="feedback">
-            
-        </section>
+
+        <section class="faq"></section>
+        <section class="third-slider"></section>
+        
 
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <section class="feedback mb-48">
+            <h2>Отримати консультацію</h2>
+            <form action="#" method="post" class="feedback-form" id="feedback-form" name="feedback-form">
+                <input type="text" name="name" id="name" placeholder="Ім'я" required>
+                <input type="text" name="tel" id="tel" data-tel-input placeholder="Номер телефону" required>
+                <span id="error-message" style="color: red; display: none;">Введіть правильний номер</span>
+                <input type="email" name="email" id="email" placeholder="Електронна пошта (не обов'язково)">
+                <textarea name="message" id="message" placeholder="Повідомлення (не обов'язково)"></textarea>
+                <button type="submit" id="submit">Перетелефонуйте мені</button>
+            </form>
+        </section>
 
+        <section class="wrapper marquee">
+            <div class="marquee-content">
+                <span>📲 Напишіть нам у месенджери або телефонуйте — допоможемо з підбором! 📦 Є все в наявності. Зробіть замовлення вже сьогодні!</span>
+                <span>📲 Напишіть нам у месенджери або телефонуйте — допоможемо з підбором! 📦 Є все в наявності. Зробіть замовлення вже сьогодні!</span>
+            </div>
+        </section>
+    </footer>
+
+    <script defer src="./js/libs/iziToast.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/libs/mask_list.js"></script>
+    <script defer src="./js/libs/mask.js"></script>
     <script defer type="module" src="./js/script.js"></script>
 </body>
 </html>

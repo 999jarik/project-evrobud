@@ -1,0 +1,14 @@
+.video-section {
+    padding: 0 48px;
+}
+.video-content {
+    padding: 96px;
+    border-radius: 44px;
+    background-color: var(--main-green);
+    overflow: hidden;
+}
+.video-section h2 {
+    font-size: 68px;
+    margin-bottom: 60px;
+    text-align: center;
+}
