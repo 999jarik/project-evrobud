@@ -52,7 +52,7 @@ const asortSlider = new Swiper('.slider-2', {
 
 var player = new Playerjs({
   id:"player", 
-  file:"https://999jarik.github.io/project-evrobud/video/test-video.mp4",
+  file:"./video/test-video.mp4",
   autoplay: 1
 });
 
@@ -60,28 +60,28 @@ let slides = [
   {
     title: "Плитка тротуарна",
     desc: "Тротуарна плитка від виробника – великий вибір кольорів та форм, гарантія якості та довговічності.",
-    urlImg: "../img/bricks.jpg",
+    urlImg: "./img/bricks.jpg",
     alt: "img",
     url: "#"
   },
   {
     title: "Шлакоблок",
     desc: "Шлакоблок для швидкого та економічного будівництва – міцний, надійний та екологічно чистий матеріал.",
-    urlImg: "../img/blocks.jpg",
+    urlImg: "./img/blocks.jpg",
     alt: "img",
     url: "#"
   },
   {
     title: "Сипучі матеріали",
     desc: "Сипучі матеріали для будівництва – пісок, щебінь, відсів, шлак з доставкою на об'єкт, завжди в наявності та за вигідними цінами.",
-    urlImg: "../img/stones.jpg",
+    urlImg: "./img/stones.jpg",
     alt: "img",
     url: "#"
   },
   {
     title: "Бетонні вироби",
     desc: "Бетонні вироби для будівництва – блоки, плити, бордюри, колодязні кільця з доставкою на об'єкт, завжди в наявності та за доступними цінами.",
-    urlImg: "../img/concrete.jpg",
+    urlImg: "./img/concrete.jpg",
     alt: "img",
     url: "#"
   },
