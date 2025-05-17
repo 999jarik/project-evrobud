@@ -33,9 +33,9 @@ const swiperSlider = new Swiper('.slider-1', {
     }
   });
 // Налаштування другого слайдеру асортименту
-const titleSlides = [];
+const titleSecondSlides = [];
 document.querySelectorAll('.asort-slide-desc h3').forEach(e => {
-  titleSlides.push(e.innerText);
+  titleSecondSlides.push(e.innerText);
 })
 
 
@@ -50,7 +50,7 @@ const asortSlider = new Swiper('.slider-2', {
     el: '.asort-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return `<span class="${className}">${titleSlides[index]}</span>`;
+      return `<span class="${className}">${titleSecondSlides[index]}</span>`;
     },
   }
 });

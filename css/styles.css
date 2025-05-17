@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Golos+Text:regular,500,600,700,800,900');
+@import url("./components/header.css");
+@import url("./components/FirstScreen.css");
+
 * {
     font-family: "Golos Text", sans-serif;
 }
@@ -9,7 +12,7 @@
     --main-grey: #bcbcef;
     --main-purple: rgb(61, 64, 91);
     --main-white: #ececef;
-  }
+}
 
 body {
     background: var(--main-white);
@@ -31,150 +34,6 @@ body {
     width: 100%;
     object-fit: cover;
 }
-/* Header Styles start */
-
-.header-content {
-    height: 86px;
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    align-items: center;
-}
-
-.logo-img {
-    height: 90%;
-    object-fit: contain;
-}
-
-.menu {
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.head-menu {
-    height: 100%;
-    padding: 0 48px;
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    border: 1px solid var(--main-green);
-    border-radius: 86px;
-}
-.menu-link,
-.contacts-link {
-    height: 64px;
-    padding: 8px 16px;
-    border-radius: 44px;
-    font-size: 22px;
-    transition: all .5s;
-    text-transform: uppercase;
-}
-.menu-link {
-    color: var(--main-purple);
-}
-.menu-link:hover {
-    color: var(--main-white);
-    background: var(--main-purple);
-}
-.head-address {
-    height: 70%;
-    display: flex;
-    justify-content: center;
-}
-.contacts-link {
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--main-green);
-    color: var(--main-white);
-}
-.contacts-link:hover {
-    background: var(--main-purple);
-}
-
-/* Header Styles end */
-
-/* First Screen Styles start */
-
-.first-screen {
-    height: 820px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: url(../img/first-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 44px;
-    padding: 0 48px 0 0;
-    margin-bottom: 48px;
-}
-.first-screen-content {
-    position: relative;
-    height: 560px;
-    width: 1080px;
-    padding: 0 64px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    gap: 24px;
-    border: 3px solid var(--main-green);
-    border-radius: 44px;
-    background: rgba(61, 64, 91, .9);
-    color: var(--main-white);
-}
-.first-screen-content h1 {
-    font-size: 84px;
-    margin-bottom: 8px;
-    text-transform: capitalize;
-}
-.first-screen-content h3 {
-    font-size: 28px;
-}
-.social-list {
-    display: flex;
-    gap: 24px;
-}
-.social-item {
-    border: 1px solid white;
-    border-radius: 100%;
-    padding: 8px;
-}
-.social-link {
-    height: 48px;
-    width: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--main-green);
-    border-radius: 100%;
-    transition: all .5s;
-    color: black;
-}
-.social-img {
-    height: 32px;
-    width: 32px;
-    color: inherit;
-}
-.social-link:hover {
-    background: black;
-    color: var(--main-green);
-}
-.first-screen-absolute {
-    position: absolute;
-    width: 1180px;
-    height: 720px;
-    border: 3px solid var(--main-green);
-    border-radius: 44px;
-    overflow: hidden;
-    left: 0;
-    top: 50%;
-    z-index: 2;
-    transform: translate(-54%, -50%);
-}
-
-/* First Screen Styles end */
 
 /* Slider Styles end */
 .slider {
@@ -458,7 +317,7 @@ body {
 
 /* Marquee section styes end */
 
-/* About section styes end */
+/* About section styes start */
 
 .about {
     background-color: var(--main-grey);
@@ -506,3 +365,14 @@ body {
 }
 
 /* About section styes end */
+
+/* feedback section styes start */
+
+.feedback {
+    background-color: var(--main-purple);
+    width: 1028px;
+    margin: 0 auto;
+
+}
+
+/* feedback section styes end */
