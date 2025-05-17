@@ -106,8 +106,14 @@ const textarea = document.getElementById('message');
         this.style.height = `${Math.min(this.scrollHeight, 240)}px`;
     });
 
+let form = document.forms.feedbackForm;
 document.querySelector('.feedback-form').addEventListener('submit', (e) => {
   e.preventDefault();
+  
+  for (let i = 0; i < form.elements.length; i++) {
+    form.elements[i].value = "";
+  }
+
   iziToast.success({
     title: 'Дякуємо',
     message: 'Зателефонуємо найближчим часом',
