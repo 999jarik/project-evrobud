@@ -1,5 +1,7 @@
 import {createSlide} from "./createSlide.js";
 import {slides} from "./slides1.js";
+import {faqs} from "./faq.js"
+
 
 createSlide(slides);
 
