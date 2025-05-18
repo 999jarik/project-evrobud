@@ -1,0 +1,34 @@
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.faq-question {
+    background: #f9f9f9;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: height 0.3s ease, padding 0.3s ease;
+}
+.faq-answer.active {
+    height: 100px; /* Фіксована висота для активного елемента */
+    padding: 15px;
+}
+.faq-question::after {
+    content: '+';
+    font-size: 20px;
+}
+.faq-question.active::after {
+    content: '−';
+}
+/* Забезпечуємо, щоб контейнер мав фіксовану висоту */
+.faq {
+    height: auto;
+}

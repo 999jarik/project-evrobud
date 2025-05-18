@@ -1,6 +1,7 @@
 import {createSlide} from "./createSlide.js";
 import {slides} from "./slides1.js";
-import {faqs} from "./faq.js"
+import {faqs} from "./faqList.js"
+import {createFaq} from "./createFaq.js"
 
 
 createSlide(slides);
@@ -121,3 +122,5 @@ document.querySelector('.feedback-form').addEventListener('submit', (e) => {
     message: 'Зателефонуємо найближчим часом',
 });
 })
+
+createFaq(faqs, document.querySelector('.faq'))
