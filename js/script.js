@@ -1,10 +1,12 @@
 import {createSlide} from "./createSlide.js";
 import {slides} from "./slides1.js";
+import {slidesCatalog, createCatalogItem} from "./slides2.js";
 import {faqs} from "./faqList.js"
 import {createFaq} from "./createFaq.js"
 
 
 createSlide(slides);
+createCatalogItem(slidesCatalog)
 
 // Налаштування плавності скролу
 SmoothScroll({
@@ -57,6 +59,24 @@ const asortSlider = new Swiper('.slider-2', {
     },
   }
 });
+
+// Налаштування слайдеру каталогу
+const catalogSlider = new Swiper('.slider-catalog', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 24,
+  grabCursor: true,
+  effect: 'slide',
+  speed: 1000,
+
+  navigation: {
+      nextEl: '.catalog-slide-next',
+      prevEl: '.catalog-slide-prev',
+    }
+})
+
+
 
 var player = new Playerjs({
   id:"player", 

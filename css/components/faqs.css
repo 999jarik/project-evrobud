@@ -12,23 +12,38 @@
     align-items: center;
 }
 .faq-answer {
+    background: #f9f9f9;
     height: 0;
     overflow: hidden;
     padding: 0 15px;
-    transition: height 0.3s ease, padding 0.3s ease;
+    transition: all 0.3s ease;
 }
 .faq-answer.active {
-    height: 100px; /* Фіксована висота для активного елемента */
+    height: 80px; /* Фіксована висота для активного елемента */
     padding: 15px;
+    border-top: 1px solid #bcbcef;
 }
 .faq-question::after {
     content: '+';
+    border: 8px solid #f9f9f9;
+    border-radius: 100%;
+    background: #3d405b;
+    height: 52px;
+    width: 52px;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-size: 20px;
+    transition: all .3s;
 }
 .faq-question.active::after {
     content: '−';
+    background: #81b29a;
 }
 /* Забезпечуємо, щоб контейнер мав фіксовану висоту */
 .faq {
     height: auto;
+    margin-bottom: 48px !important;
 }
