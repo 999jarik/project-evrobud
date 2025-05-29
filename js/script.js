@@ -1,6 +1,7 @@
 import {createSlide} from "./createSlide.js";
 import {slides} from "./slides1.js";
-import {slidesCatalog, createCatalogItem} from "./slides2.js";
+import {slidesCatalog} from "./slidesCatalog.js";
+import {createCatalogItem} from "./createCatalogSlide.js";
 import {faqs} from "./faqList.js"
 import {createFaq} from "./createFaq.js"
 

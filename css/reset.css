@@ -1,6 +1,7 @@
 /* Reset and base styles  */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 48px;
   }
 * {
     padding: 0px;
