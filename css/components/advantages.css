@@ -1,9 +1,12 @@
 .advantages {
-    padding: 0 48px;
-    display: flex;
+    padding: 48px;
+    gap: 48px;
+    background-color: var(--main-green);
+}
+.advantages-container {
+        display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 48px;
 }
 .advantages-item {
     width: 22%;
