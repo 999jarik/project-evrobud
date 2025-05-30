@@ -46,3 +46,13 @@ body {
     width: 100%;
     object-fit: cover;
 }
+.ov-hidden {
+    overflow: hidden;
+}
+
+@media (max-width: 1150px) {
+    html {
+        scroll-behavior: auto;
+        scroll-padding-top: 24px;
+    }
+}

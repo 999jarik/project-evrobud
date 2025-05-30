@@ -7,7 +7,23 @@ import {createFaq} from "./createFaq.js"
 
 
 createSlide(slides);
-createCatalogItem(slidesCatalog)
+createCatalogItem(slidesCatalog);
+createFaq(faqs, document.querySelector('.faq'))
+
+document.querySelector('.burger').addEventListener("click", () => {
+  document.querySelector('.burger').classList.toggle("active");
+  document.querySelector('.modal-menu').classList.toggle("open");
+  document.querySelector('body').classList.toggle("ov-hidden")
+})
+
+document.querySelector('.modal-menu').addEventListener("click", (e) => {
+  if (e.target.tagName === "A") {
+    document.querySelector('.burger').classList.toggle("active");
+    document.querySelector('body').classList.toggle("ov-hidden");
+    document.querySelector('.modal-menu').classList.toggle("open")
+  }
+  
+})
 
 // Налаштування плавності скролу
 SmoothScroll({
@@ -144,4 +160,3 @@ document.querySelector('.feedback-form').addEventListener('submit', (e) => {
 });
 })
 
-createFaq(faqs, document.querySelector('.faq'))
