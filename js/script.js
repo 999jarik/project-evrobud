@@ -22,7 +22,6 @@ document.querySelector('.modal-menu').addEventListener("click", (e) => {
     document.querySelector('body').classList.toggle("ov-hidden");
     document.querySelector('.modal-menu').classList.toggle("open")
   }
-  
 })
 
 // Налаштування плавності скролу

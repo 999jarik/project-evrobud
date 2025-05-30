@@ -12,7 +12,7 @@ function createSlide(arr) {
     slideDesc.innerHTML = `<span class="slide-count">${arr.indexOf(item) + 1}/${arr.length}</span>
                             <span class="slide-title">${item.title}</span>
                             <p>${item.desc}</p>
-                            <a href=${item.url} class="contacts-link">
+                            <a href=${item.url} class="contacts-link link-center">
                                     <span>Дізнатись більше</span>
                                 </a>`;
     slide.append(img);
