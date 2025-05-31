@@ -1,6 +1,7 @@
 .marquee {
-      width: 100%;
+      width: calc(100% + 30px);
       height: 198px;
+      margin-left: -15px;
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;

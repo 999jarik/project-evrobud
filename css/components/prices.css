@@ -8,16 +8,40 @@
     border: 1px solid var(--main-green);
     border-radius: 44px;
     overflow: hidden;
-    display: grid;grid-template-rows: 4fr 1fr;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
 .price-card-title {
     background: var(--main-green);
-    padding: 110px 40px;
+    padding: 64px 24px;
     font-size: 62px;
 }
 .price-card-value {
-    padding: 0 40px;
+    padding: 16px 40px;
     display: flex;
     align-items: center;
     font-size: 48px;
+}
+@media (max-width: 1438px) {
+    .prices {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+    }
+    .price-card-title {
+        font-size: 48px;
+    }
+    .price-card-value {
+        font-size: 32px;
+    }
+}
+@media (max-width: 766px) {
+    .prices {
+        padding: 0 16px;
+    }
+    .price-card-title {
+        font-size: 32px;
+    }
+    .price-card-value {
+        font-size: 22px;
+    }
 }

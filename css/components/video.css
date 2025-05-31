@@ -1,6 +1,4 @@
-.video-section {
-    padding: 0 48px;
-}
+
 .video-content {
     padding: 96px;
     border-radius: 44px;
@@ -11,4 +9,19 @@
     font-size: 68px;
     margin-bottom: 60px;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    .video-section h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .video-content {
+        padding: 24px;
+    }
+}
+@media (max-width: 400px) {
+    .video-section h2 {
+        font-size: 28px;
+    }
 }

@@ -42,6 +42,7 @@ touchpadSupport : true,
 const swiperSlider = new Swiper('.slider-1', {
     direction: 'horizontal',
     loop: false,
+    spaceBetween: 24,
     autoplay: {
       delay: 10000,
     },
@@ -72,8 +73,12 @@ const asortSlider = new Swiper('.slider-2', {
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="${className}">${titleSecondSlides[index]}</span>`;
-    },
-  }
+    }
+  },
+  navigation: {
+      nextEl: '.asort-slide-next',
+      prevEl: '.asort-slide-prev',
+    }
 });
 
 // Налаштування слайдеру каталогу
@@ -85,6 +90,19 @@ const catalogSlider = new Swiper('.slider-catalog', {
   grabCursor: true,
   effect: 'slide',
   speed: 1000,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4
+    }
+  },
 
   navigation: {
       nextEl: '.catalog-slide-next',

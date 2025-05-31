@@ -60,6 +60,10 @@
     font-size: 28px;
 }
 
+.asort-pagination-box {
+    position: relative;
+}
+
 .asort-pagination {
     max-width: fit-content;
     display: flex;
@@ -93,4 +97,85 @@
 .asort-pagination .swiper-pagination-bullet:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.asort-slider-arrows {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    gap: 24px;
+    z-index: 6;
+    transform: translate(0, -50%);
+}
+
+.asort-slide-prev,
+.asort-slide-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 64px;
+    width: 64px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.asort-slide-prev:hover,
+.asort-slide-next:hover {
+    background: #000;
+    color: var(--main-white);
+}
+
+@media (max-width: 1438px) {
+    .asort {
+        padding: 24px 16px;
+        row-gap: 24px;
+    }
+    .asort-title {
+        font-size: 28px;
+    }
+    .asort-pagination {
+        display: none;
+    }
+    .asort-slider-arrows {
+        display: flex;
+    }
+    .asort-slide {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        gap: 24px;
+        justify-items: center;
+    }
+    .asort-slide-img-box {
+        height: 400px;
+        width: 400px;
+    }
+    .asort-slide-desc {
+        gap: 16px;
+    }
+    .asort-slide-desc h3 {
+        font-size: 24px;
+    }
+    .asort-slide-desc span {
+        font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .asort-title-img {
+        height: 32px;
+        width: 32px;
+    }
+    .asort-slide-img-box {
+        height: 280px;
+        width: 280px;
+    }
+    .asort-slide-prev,
+    .asort-slide-next {
+        width: 32px;
+        height: 32px;
+    }
 }
