@@ -52,6 +52,9 @@
     .about-desc h2 {
         font-size: 32px;
     }
+    .contacts {
+        flex-direction: column;
+    }
 }
 @media (max-width: 400px) {
     .map {

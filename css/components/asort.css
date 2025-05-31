@@ -164,7 +164,7 @@
         font-size: 18px;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .asort-title-img {
         height: 32px;
         width: 32px;
